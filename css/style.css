@@ -53,14 +53,46 @@ a {
   letter-spacing: 0.03em;
   color: var(--primary-background-color);
 }
+
+/* Хедер */
+.page-header {
+}
+/* Контеинер */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.main-nav {
+  display: flex;
+}
 /*Site-nav */
+.site-nav {
+  display: flex;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
+  background-color: red;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-style: 400;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+}
+/*  Контакты*/
+.contacts-nav {
+  display: flex;
+}
+.contacts-nav .item + .item {
+  margin-left: 50px;
 }
 
 .contacts-nav .link {
