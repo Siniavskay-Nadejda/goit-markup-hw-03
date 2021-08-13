@@ -62,13 +62,24 @@ a {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: cornflowerblue;
 }
 .main-nav {
   display: flex;
+  align-items: center;
 }
+nav {
+  display: flex;
+  align-items: center;
+}
+
 /*Site-nav */
 .site-nav {
   display: flex;
+  margin-left: 93px;
 }
 .site-nav .item + .item {
   margin-left: 50px;
@@ -90,6 +101,7 @@ a {
 /*  Контакты*/
 .contacts-nav {
   display: flex;
+  margin-left: auto;
 }
 .contacts-nav .item + .item {
   margin-left: 50px;
@@ -113,13 +125,14 @@ a {
 /*Герой */
 .hero {
   background-color: var(--bg-hero-footer-color);
+  text-align: center;
 }
+
 .hero-title {
   font-style: 400;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-background-color);
@@ -127,6 +140,11 @@ a {
 /* section */
 
 .button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
   color: var(--primary-background-color);
   background-color: var(--accent-text-color);
   font-family: Roboto, sans-serif;
@@ -135,6 +153,7 @@ a {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+  text-decoration: none;
 }
 .section-title {
   font-weight: 700;
@@ -146,6 +165,17 @@ a {
 }
 
 /* Приемущества */
+.benefits {
+  display: flex;
+}
+.benefits .elements {
+  background-color: crimson;
+  width: 270px;
+  margin-right: 30px;
+}
+.benefits .elements:last-child {
+  margin-right: 0px;
+}
 .benefits-title {
   font-style: 400;
   font-weight: 700;
@@ -161,16 +191,30 @@ a {
   letter-spacing: 0.03em;
 }
 /* Наша команда */
+.team {
+  display: flex;
+}
+.team-element {
+  width: 270px;
+  margin-right: 30px;
+  background-color: darkgoldenrod;
+}
+.team .team-element:last-child {
+  margin: 0px;
+}
+
 .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 .team-text {
   font-size: 16px;
   line-height: 1.9;
+  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -197,6 +241,11 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 /* Стили для Партфолио */
+.flex-button {
+  display: flex;
+  justify-content: center;
+}
+
 .button-filter {
   font-family: Roboto, sans-serif;
   font-style: 400;
@@ -205,7 +254,9 @@ a {
   line-height: 1.6;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-right: 8px;
 }
+
 .button-filter:hover,
 .button-filter:focus {
   color: var(--primary-background-color);
@@ -213,6 +264,13 @@ a {
 }
 .works {
   color: #ffffff;
+  display: flex;
+}
+.flex-element {
+  margin-right: 30px;
+}
+.flex-element:last-child {
+  margin-right: 0px;
 }
 .works-title {
   font-weight: 700;
