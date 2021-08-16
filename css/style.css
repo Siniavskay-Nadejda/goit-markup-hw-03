@@ -64,8 +64,6 @@ a {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-
-  background-color: cornflowerblue;
 }
 .main-nav {
   display: flex;
@@ -83,7 +81,6 @@ nav {
 }
 .site-nav .item + .item {
   margin-left: 50px;
-  background-color: red;
 }
 
 .site-nav .link {
@@ -126,6 +123,8 @@ nav {
 .hero {
   background-color: var(--bg-hero-footer-color);
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 109px;
 }
 
 .hero-title {
@@ -138,7 +137,9 @@ nav {
   color: var(--primary-background-color);
 }
 /* section */
-
+.section {
+  background-color: darkorange;
+}
 .button {
   display: inline-block;
   border-radius: 4px;
@@ -156,6 +157,8 @@ nav {
   text-decoration: none;
 }
 .section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -169,7 +172,6 @@ nav {
   display: flex;
 }
 .benefits .elements {
-  background-color: crimson;
   width: 270px;
   margin-right: 30px;
 }
@@ -177,6 +179,8 @@ nav {
   margin-right: 0px;
 }
 .benefits-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
   font-style: 400;
   font-weight: 700;
   font-size: 14px;
@@ -186,6 +190,8 @@ nav {
   color: var(--title-text-color);
 }
 .benefits-text {
+  margin-top: 0px;
+  margin-bottom: 94px;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -197,8 +203,8 @@ nav {
 .team-element {
   width: 270px;
   margin-right: 30px;
-  background-color: darkgoldenrod;
 }
+
 .team .team-element:last-child {
   margin: 0px;
 }
@@ -262,6 +268,20 @@ nav {
   color: var(--primary-background-color);
   background-color: var(--accent-text-color);
 }
+.flex-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.set-element {
+  width: 370px;
+  margin-bottom: 30px;
+}
+.set-element:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
 .works {
   color: #ffffff;
   display: flex;
